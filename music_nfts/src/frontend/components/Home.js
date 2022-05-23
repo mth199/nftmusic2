@@ -13,7 +13,7 @@ const Home = ({ contract }) => {
     // Get all unsold items/tokens
     const results = await contract.getAllUnsoldTokens()
     const marketItems = await Promise.all(results.map(async i => {
-      // get uri url from contract
+      // get uri url from contract AAAAA
       const uri = await contract.tokenURI(i.tokenId)
       // use uri to fetch the nft metadata stored on ipfs 
       const response = await fetch(uri + ".json")

@@ -25,7 +25,7 @@ function App() {
     setAccount(accounts[0])
     // Get provider from Metamask
     const provider = new ethers.providers.Web3Provider(window.ethereum)
-    // Get signer alteracao
+    // Get signer alteracaosadsad
     const signer = provider.getSigner()
     loadContract(signer)
   }
